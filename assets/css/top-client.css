@@ -1,0 +1,199 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/ae_AlMothnna_bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: secFont;
+  src: url(../fonts/GE-MB-MB-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: thirdFont;
+  src: url(../fonts/bahnschrift.ttf);
+  font-weight: 500;
+}
+
+.input-group-text {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 5px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 5px !important;
+  color: #9ca0a3;
+  font-family: myFirstFont;
+  background-color: white !important;
+}
+
+.icon-search4 {
+  position: relative;
+  bottom: 50px;
+}
+
+.search-button {
+  font-family: myFirstFont;
+  color: #1492e6;
+  position: relative;
+  top: 4px;
+  background-color: white;
+  width: 90px;
+  border-style: solid;
+  border-color: #1492e6;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 0px 3px 6px -3px #00000083;
+}
+
+h5 {
+  font-family: myFirstFont;
+  color: #1492e6;
+  direction: rtl;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.form-control {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.margin-card-cus {
+  margin-bottom: 0px;
+}
+
+.cus-form-control-feedback {
+  position: absolute;
+  top: -3px !important;
+  left: -5px !important;
+  top: 0px;
+  color: rgb(51, 51, 51);
+  line-height: calc(1.5715em + 0.875rem + 2px);
+  min-width: 1rem;
+}
+
+.custom-form-control-search {
+  text-align: center;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 0px !important;
+  color: #9ca0a3;
+}
+
+.arabic {
+  font-family: secFont;
+  color: #707070;
+}
+
+.num-table {
+  font-family: thirdFont;
+  color: #707070;
+}
+
+.cus-padding-card-search {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.search-but {
+  background-color: transparent;
+  border-color: transparent;
+  width: 16px;
+  height: 16px;
+}
+
+.custom-form-control-search-color {
+  background-color: #f6f6f6 !important;
+}
+
+.export {
+  height: 25px;
+  width: fit-content;
+  border-color: transparent;
+  background-color: transparent;
+  position: relative;
+  top: 10%;
+}
+
+.dispaly-style {
+  display: inline !important;
+}
+
+.but-height {
+  position: relative;
+  left: 35%;
+}
+
+.form-group-feedback {
+  position: relative;
+  right: 15%;
+}
+
+.heghit-dev {
+  height: fit-content !important;
+}
+
+.daterangepicker {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  font-family: thirdFont;
+}
+
+.padding-card img {
+  margin-bottom: -12px;
+  width: fit-content;
+}
+
+.head {
+  font-family: myFirstFont;
+  text-align: center;
+}
+
+.rounded-table {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+}
+
+tbody tr {
+  text-align: center;
+}
+
+.head-table {
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 576px) {
+  .form-group-feedback{
+    position: relative;
+    left: 20px;
+    margin-top: 15px;
+  }
+
+  .heghit-dev{
+    margin-bottom: 20px;
+  }
+  .export{
+    position: relative;
+    left: 20px;
+  }
+}

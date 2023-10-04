@@ -1,0 +1,158 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/ae_AlMothnna_bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: secFont;
+    src: url(../fonts/GE-MB-MB-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: thirdFont;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 500;
+}
+
+.butt-table-tran{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #E15858;
+    border-color: #FFFFFF;
+    border-style: solid;
+    box-shadow: 0px 3px 6px -3px #00000083;
+    color: white;
+    font-family: secFont;
+    border-width: 2px;
+}
+
+.img-for-btn{
+    position: relative;
+    bottom: 6px;
+    left: -2px;
+}
+
+tbody.tran-inf{
+    background-color: #F6CECE;
+}
+
+tbody tr td {
+    border-color: transparent;
+    border-bottom-color: white;
+    border-style: none none solid none;
+}
+
+tbody.done{
+    background-color: #D9F6CE;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.trans-btn{
+    font-family: secFont;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    background-color: #1492E6;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    width: 85px;
+    box-shadow: 0px 3px 6px -3px #00000083;
+}
+
+
+.modal-content{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-style: solid;
+    border-color: #1492E6 ;
+    border-width: 2.5px;
+    box-shadow: 0px 3px 6px -3px #1492E6;
+
+}
+
+
+.lable{
+    direction: rtl;
+    font-family: secFont;
+    text-align: start;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.arabic{
+    font-family: secFont;
+
+}
+
+.english{
+    font-family: thirdFont !important;
+}
+
+.cus-modle-form-control {
+    text-align: start ;
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    height: calc(1.5715em + .875rem + 2px);
+    padding: .4375rem .875rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5715;
+    color: #707070;
+    background-color: #F6F6F6;
+    background-clip: padding-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: white;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -ms-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-width: 1.5px;
+    border-style: solid;
+}
+
+.cus-modle-form-control:focus {
+    border-color: #1492E6;
+}
+
+.modal-title{
+    text-align: center;
+    color: #707070;
+    font-size: 35px;
+}
+
+.close-btn{
+    font-family: secFont;
+    color: #9B9B9B;
+    border-style: solid;
+    border-color: #9B9B9B;
+    background-color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    width: 85px;
+    box-shadow: 0px 3px 6px -3px #00000083;
+}

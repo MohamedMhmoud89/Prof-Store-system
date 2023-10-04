@@ -1,0 +1,86 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/ae_AlMothnna_bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: secFont;
+  src: url(../fonts/GE-MB-MB-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: thirdFont;
+  src: url(../fonts/bahnschrift.ttf);
+  font-weight: 500;
+}
+
+
+.orm-group-feedback{
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    position: relative;
+    padding-bottom: 1% !important;
+}
+
+
+.close-btn{
+  font-family: myFirstFont;
+  color: #9B9B9B;
+  border-style: solid;
+  border-color: #9B9B9B;
+  background-color: white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  width: 85px;
+  box-shadow: 0px 3px 6px -3px #00000083;
+}
+
+.unavailable-img{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.delev-btn{
+  font-family: myFirstFont;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  background-color: #1492E6;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  width: 85px;
+  box-shadow: 0px 3px 6px -3px #00000083;
+}
+
+
+.modal-title{
+  text-align: center;
+  color: #707070;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.delev-img{
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+.disc-title{
+  text-align: start;
+  direction: rtl;
+  margin-left: 5%;
+  margin-right: 10%;
+  color: #9CA0A3;
+  font-family: secFont;
+}

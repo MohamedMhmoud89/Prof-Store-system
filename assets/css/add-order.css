@@ -1,0 +1,236 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/ae_AlMothnna_bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: secFont;
+    src: url(../fonts/GE-MB-MB-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: thirdFont;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 500;
+}
+
+.num-title-info{
+    font-family: thirdFont;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 80px;
+    display: block;
+}
+
+.card{
+    text-align: end;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.title-head{
+    font-family: myFirstFont;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 80px;
+    color: #1492E6;
+    display: block;
+}
+
+    button.save{
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        background-color: #58E198;
+        outline-color: transparent;
+        text-align: center;
+        border: solid;
+        border-color: white;
+        color: white;
+        box-shadow: 0px 3px 6px -3px #00000083;
+        width:100px;
+}
+
+button.exit{
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: #E15858;
+    outline-color: transparent;
+    text-align: center;
+    border: solid;
+    border-color: white;
+    color: white;
+    box-shadow: 0px 3px 6px -3px #00000083;
+    width:100px;
+}
+
+div.botton-sve-or-exit{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-family: myFirstFont;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 100px;
+}
+
+.pay-detials{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-family: myFirstFont;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+hr{
+    border-color: #B1B1B1;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.title-detials{
+    font-family: secFont;
+    font-size: 18px;
+    color: #959CA7;
+    text-align:end;
+    width: 150px;
+}
+.price-detials{
+    font-family: thirdFont;
+    font-size: 18px;
+    color: #959CA7;
+    text-align: center;
+    width: 120px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    height: calc(1.5715em + .875rem + 2px);
+    padding: .4375rem .875rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5715;
+    color: #707070;
+    background-color: #F6F6F6;
+    background-clip: padding-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: white;
+    text-align: end;
+    font-family: secFont;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -ms-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-width: 1.5px;
+}
+
+.form-control:focus{
+    border-color: #1492E6;
+}
+
+.row{
+    margin: 15px;
+}
+
+.num-input{
+    font-family: thirdFont;
+}
+
+
+.rtl{
+    direction: rtl;
+}
+
+.rtl-text{
+    text-align: start;
+}
+
+.table{
+    direction: rtl;
+    text-align: center;
+}
+
+.table th {
+    font-family: myFirstFont;
+    color: #1492E6;
+}
+
+.button-for-table{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.desccount{
+    text-align: center;
+    font-family: thirdFont;
+}
+
+.static-num{
+    text-align: center;
+    font-family: thirdFont;
+    border-color: transparent;
+    background-color: transparent;
+    color: #959CA7;
+}
+
+.static-num:read-only{
+    background-color: transparent;
+}
+
+.static-num:focus{
+    border-color: transparent;
+    color: #959CA7;
+}
+
+.add-button{
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #ddd;
+    border-width: 1.5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 68px;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.selection-table{
+    text-align: center;
+    font-family: thirdFont;
+    direction: rtl;
+
+}
+
+.img-tabl{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+:placeholder-shown{
+    font-family: secFont;
+}

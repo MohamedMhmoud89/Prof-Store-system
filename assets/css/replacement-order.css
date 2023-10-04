@@ -1,0 +1,39 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/ae_AlMothnna_bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: secFont;
+    src: url(../fonts/GE-MB-MB-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: thirdFont;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 500;
+}
+
+h4{
+    color: #959CA7;
+    font-family: thirdFont;
+}
+
+.drop-img{
+    margin: 3% 5% 0px 5%;
+}
+
+.dropzone{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    min-height: 10rem
+}
+
+:placeholder-shown{
+    font-family: secFont;
+}

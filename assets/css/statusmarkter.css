@@ -1,0 +1,36 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/ae_AlMothnna_bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: secFont;
+    src: url(../fonts/GE-MB-MB-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: thirdFont;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 500;
+}
+
+.butt-table-accept{
+    color: #58E198;
+    font-family: secFont;
+    background-color: transparent;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.deleted{
+    background-color: transparent;
+    border-style: solid;
+    border-color: transparent;
+    margin-bottom: 10px;
+}
+
+.dis{
+    display: block;
+}

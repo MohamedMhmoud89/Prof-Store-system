@@ -1,0 +1,53 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/ae_AlMothnna_bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: secFont;
+    src: url(../fonts/GE-MB-MB-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: thirdFont;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 500;
+}
+
+h5{
+    text-align: start;
+}
+
+.logo-shipping{
+    position: relative;
+    bottom: -6px;
+    margin-right: 20px;
+}
+
+.flex-style{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h3{
+    direction: rtl;
+    text-align: start;
+    color: #1492e6;
+    font-family: myFirstFont;
+    margin-top: 10px;
+    padding-right: 25px;
+    font-size: 18px;
+    margin-left: 20px;
+    position: relative;
+    top: 15px;
+}
+
+.hr-table{
+    width: 100%;
+    border-color: #707070 !important;
+    position: relative;
+    bottom: -8px;
+}

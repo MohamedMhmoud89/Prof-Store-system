@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Prof Store</title>
+	<link rel="icon" type="image/x-icon" href="assets/images/logo-head.png">
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="global_assets/js/main/jquery.min.js"></script>
+	<script src="global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="global_assets/js/demo_pages/dashboard.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/lines.js"></script>	
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/areas.js"></script>
+	<script src="lobal_assets/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/bars.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/progress.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/pies.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/bars_basic.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/bars_stacked.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/bars_stacked_clustered.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/bars_floating.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/bars_line.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/tornado_negative_stack.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/tornado_staggered.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_basic.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_stacked.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_inverted_axes.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_multiple.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_point_values.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_zoom.js"></script>
+	<script src="../../../../global_assets/js/plugins/visualization/echarts/echarts.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_basic.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_donut.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_nested.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_infographic.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_rose.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_rose_labels.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_levels.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_timeline.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_multiple.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+	<script src="../../../../global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
+	<script src="../../../../global_assets/js/plugins/notifications/jgrowl.min.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/picker_date.js"></script>
+	<!-- /theme JS files -->
+    <link rel="stylesheet" href="assets/css/master.css">
+	<link rel="stylesheet" href="assets/css/top-client.css">
+	<link rel="stylesheet" href="assets/css/statusmarkter.css">
+
+
+</head>
+
+<body>
+
+<!-- Main navbar -->
+<div class="navbar navbar-expand-xl navbar-dark navbar-static">
+    <div class="d-flex flex-1 d-xl-none">
+        <button type="button" class="navbar-toggler sidebar-mobile-main-toggle">
+            <i class="icon-paragraph-justify3"></i>
+        </button>
+    </div>
+
+    <div class="navbar-brand text-center text-xl-left">
+        <a href="home_page.html" class="d-inline-block">
+            <img src="assets/images/logo-main.png" class="d-none d-sm-block" alt="">
+            <img src="assets/images/Logo-sgadow.png" class="d-sm-none" alt="">
+        </a>
+    </div>
+
+    <div class="collapse navbar-collapse order-2 order-xl-1 " id="navbar-mobile">
+    </div>
+
+    <ul class="navbar-nav flex-row order-1 order-xl-2 flex-1 flex-xl-0 justify-content-end align-items-center">
+		<!-- <li>            
+			<a href="add-order.html" class="navbar-nav-link">
+			<i><img height="20.5rem" src="assets/icons/cart.svg" alt=""></i>
+		</a>
+		</li> -->
+        <li class="nav-item nav-item-dropdown-xl dropdown">
+            <a href="#" class="navbar-nav-link navbar-nav-link-toggler" data-toggle="dropdown" aria-expanded="false">
+                <i><img height="20.5rem" src="assets/icons/noti.svg" alt=""></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-xl-350">
+                <div class="diriction dropdown-content-header">
+					<span class="font-weight-semibold">الإشعارات</span>
+                </div>
+
+				<div class="dropdown-content-body dropdown-scrollable">
+                    <ul class="media-list">
+						<li class="media">
+                            <div class="media-body">
+                                <span class="text-muted massege">الاوردر كود 1234568 لايرد على الهاتف لكي يتم تأكيد الاوردر و شحنه</span>
+                            </div>
+							<div class="mr-3 position-relative">
+                                <img src="assets/icons/call-center-massege.svg" width="36" height="36" alt="">
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-body">
+                                <span class="text-muted massege">تم تحويل مبلغ 2000ج على المحفظه رقم 01023654785</span>
+                            </div>
+							<div class="mr-3 position-relative">
+                                <img src="assets/icons/wallet-massege.svg" width="36" height="36" alt="">
+                            </div>
+                        </li>
+						<li class="media">
+                            <div class="media-body">
+                                <span class="text-muted massege">تم توفير قطع من المنتج في المخزن</span>
+                            </div>
+							<div class="mr-3 position-relative">
+                                <img src="assets/icons/shoe-massege.svg" width="36" height="36" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dropdown-content-footer justify-content-center p-0">
+                    <a href="notification-page.html" class="btn btn-light btn-block border-0 rounded-top-0" data-popup="tooltip" title="" data-original-title="Load more"><span class="more-noti">عرض المزيد</س></a>
+                </div>
+            </div>
+        </li>
+
+        <li class="nav-item nav-item-dropdown-xl dropdown dropdown-user show">
+                <img src="assets/images/avatar-svgrepo-com.svg" class="rounded-pill mr-xl-2" height="34" alt="">
+                <span class="user-name-head d-none d-xl-inline-block">Hi! User</span>
+        </li>
+    </ul>
+</div>
+<!-- /main navbar -->
+
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-xl">
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- User menu -->
+					<div class="sidebar-section-body">
+						<div class="media">
+							<img height="35.25rem" src="assets/images/logo-main.png" class=" btn-outline-lighsidebar-mobile-right-toggle d-xl-none" alt="">
+							<div class="media-body">
+							</div>
+							<div class="ml-3 align-self-center">
+								<button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-xl-inline-block">
+									<i class="icon-transmission"></i>
+								</button>
+
+								<button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-xl-none">
+									<i class="icon-cross2"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				<!-- /user menu -->
+
+
+				<!-- Main navigation -->
+				<div class="flex-space sidebar-section">
+					<div>
+						<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+							<!-- Main -->
+							<li class="nav-item">
+								<a href="home_page.html" class="nav-link">
+									<span class=" icontextspan">
+										الصفحة الرئيسية
+									</span>
+									<i><img class="label-active-side-bar" height="20.5rem" src="assets/icons/home.svg" alt=""></i>
+								</a>
+							</li>
+							<li class="nav-item nav-item-submenu">
+								<a href="#" class="nav-link">
+									<span class="icontextspan-2">الموظفين</span>
+									<i><img height="18.5rem" src="assets/icons/Employees.svg" alt=""></i> 
+								</a>
+								<ul class="nav nav-group-sub" data-submenu-title="Themes">
+										<li class="nav-item ordertext">
+											<a href="employees-stat.html" class="nav-link ">
+											<span class="add-or-check">
+												حالة الموظفين
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="tasks.html" class="nav-link ">
+											<span class="add-or-check">
+												تاسكات											
+											</span>
+											</a>
+										</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="topclient.html" class="nav-link">
+									<span class="icontextspan">
+										عملاء مميزين
+									</span>
+									<i><img height="25.5rem" src="assets/icons/star-emp.svg" alt=""></i>
+								</a>
+							</li>
+							<li class="nav-item nav-item-submenu"> 
+								<a href="#" class="nav-link">
+									<span class="icontextspan">الاوردرات</span>
+									<i><img height="20.5rem" src="assets/icons/order.svg" alt=""></i> 
+								</a>
+								<ul class="nav nav-group-sub" data-submenu-title="Themes">
+										<li class="nav-item ordertext">
+											<a  href="order-stat.html" class="nav-link active ">
+												<span  class="add-or-check">حالة الاوردرات</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="add-order.html" class="nav-link ">
+											<span class="add-or-check">
+												إضافة اوردر جديد
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="replacement-order.html" class="nav-link ">
+											<span class="add-or-check">
+												إضافة اوردر أستبدال
+											</span>
+											</a>
+										</li>
+								</ul>
+							</li>
+							<li class="nav-item nav-item-submenu">
+								<a href="#" class="nav-link">
+									<span class="icontextspan-2">شركات الشحن</span>
+									<i><img height="15.5rem" src="assets/icons/shipping.svg" alt=""></i> 
+								</a>
+								<ul class="nav nav-group-sub" data-submenu-title="Themes">
+									<li class="nav-item nav-item-submenu"> 
+										<a href="#" class="nav-link">
+											<span class="icontextspan-3">اشحنلي</span>
+											<i><img height="12.5rem" src="assets/icons/ecs-gray.svg" alt=""></i> 
+										</a>
+										<ul class="nav nav-group-sub" data-submenu-title="Themes">
+												<li class="nav-item ordertext">
+													<a  href="deliverables-ecs.html" class="nav-link active ">
+														<span  class="add-or-check">إرسال تقارير</span>
+													</a>
+												</li>
+												<li class="nav-item ordertext">
+													<a href="Accounts-ecs.html" class="nav-link ">
+													<span class="add-or-check">
+														حساب شركة شحن
+													</span>
+													</a>
+												</li>
+												<li class="nav-item ordertext">
+													<a href="create_a-settlement-ecs.html" class="nav-link ">
+													<span class="add-or-check">
+														إنشاء تسوية													
+													</span>
+													</a>
+												</li>
+												<li class="nav-item ordertext">
+													<a href="print-orders-ecs.html" class="nav-link ">
+													<span class="add-or-check">
+														طباعة اوردرات 													
+													</span>
+													</a>
+												</li>
+												<li class="nav-item ordertext">
+													<a href="reactionary-ecs.html" class="nav-link ">
+													<span class="add-or-check">
+														مرتجعات													
+													</span>
+													</a>
+												</li>
+										</ul>
+									</li>
+									<li class="nav-item nav-item-submenu"> 
+										<a href="#" class="nav-link">
+											<span class="icontextspan-3">كيو بي</span>
+											<i><img height="12.5rem" src="assets/icons/qp-gray.svg" alt=""></i> 
+										</a>
+										<ul class="nav nav-group-sub" data-submenu-title="Themes">
+											<li class="nav-item ordertext">
+												<a  href="deliverables-qp.html" class="nav-link active ">
+													<span  class="add-or-check">إرسال تقارير</span>
+												</a>
+											</li>
+											<li class="nav-item ordertext">
+												<a href="Accounts-qp.html" class="nav-link ">
+												<span class="add-or-check">
+													حساب شركة شحن
+												</span>
+												</a>
+											</li>
+											<li class="nav-item ordertext">
+												<a href="create_a-settlement-qp.html" class="nav-link ">
+												<span class="add-or-check">
+													إنشاء تسوية													
+												</span>
+												</a>
+											</li>
+											<li class="nav-item ordertext">
+												<a href="print-orders-qp.html" class="nav-link ">
+												<span class="add-or-check">
+													طباعة اوردرات 													
+												</span>
+												</a>
+											</li>
+											<li class="nav-item ordertext">
+												<a href="reactionary-qp.html" class="nav-link ">
+												<span class="add-or-check">
+													مرتجعات													
+												</span>
+												</a>
+											</li>
+									</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item nav-item-submenu"> 
+								<a href="#" class="nav-link">
+									<span class="icontextspan">المسوقين</span>
+									<i><img height="20.5rem" src="assets/icons/kk.svg" alt=""></i> 
+								</a>
+								<ul class="nav nav-group-sub" data-submenu-title="Themes">
+										<li class="nav-item ordertext">
+											<a  href="topmarkter.html" class="nav-link active ">
+												<span  class="add-or-check">المسوقين المتميزين</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="statusmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												حالة المسوقين											
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="accountsmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												حسابات المسوقين											
+											</span>
+											</a>
+										</li>
+								</ul>
+							</li>
+							<li class="nav-item nav-item-submenu"> 
+								<a href="#" class="nav-link">
+									<span class="icontextspan">تقارير </span>
+									<i><img height="20.5rem" src="assets/icons/report.svg" alt=""></i> 
+								</a>
+								<ul class="nav nav-group-sub" data-submenu-title="Themes">
+										<li class="nav-item ordertext">
+											<a href="statusmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												تقارير										
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="statusmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												تقارير قطع										
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="accountsmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												تقارير قطع بروف										
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="accountsmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												تقارير قطع مسوقين										
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="statusmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												تقارير اوردرات تسليم										
+											</span>
+											</a>
+										</li>
+								</ul>
+							</li>
+							
+							<!-- /main -->
+						</ul>
+					</div>
+					<div>
+						<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+							<!-- Main -->
+							<li class="nav-item">
+								<a href="profile.html" class="nav-link">
+								<span class="icontextspan">الاعدادات</span>
+								<i><img height="20.5rem" src="assets/icons/sett.svg" alt=""></i> 
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<span class="icontextspan">
+										تسجيل الخروج
+									</span>
+									<i><img height="20.5rem" src="assets/icons/out.svg" alt=""></i>
+								</a>
+							</li>
+							<!-- /main -->
+						</ul>
+					</div>
+					
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Inner content --> 
+			<div class="content-inner">
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Traffic sources -->
+					<div class="card padding-card">
+						
+						<div class="">
+							<div class=" col-xl-12">
+								<div class="rtl row">
+									
+									<div class=" col-xl-6">
+										<h5>حالة المسوقين  </h5>
+									</div>
+									<div class=" col-xl-6">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cus-padding-card-search  color-card">
+							<div class="flex-cus col-xl-12">
+								<div class="row">
+									<div class=" rtl col-xl-5">
+										<div class=" col-xl-12">
+											<div class="row">
+												<div class=" col-xl-5">
+													<div class="form-group">
+														<div class="rtl input-group">
+															<span class="input-group-prepend">
+																<span class="input-group-text">من</span>
+															</span>
+															<input type="text" class=" custom-form-control-search-color custom-form-control-search form-control daterange-single">
+														</div>														
+													</div>
+												</div>
+												<div class=" col-xl-5">
+													<div class="form-group">
+														<div class="rtl input-group">
+															<span class="input-group-prepend">
+																<span class="input-group-text">الي</span>
+															</span>
+															<input type="text" class=" custom-form-control-search-color custom-form-control-search form-control daterange-single">
+														</div>
+													</div>
+												</div>
+												<div class=" col-xl-1">
+													<button class="search-button">
+															بحث
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class=" col-xl-1">
+										
+									</div>
+									<div class=" col-xl-3">
+										<div class="form-group-feedback form-group-feedback-left flex-grow-1 searchbar">
+											<input type="search" aria-controls="DataTables_Table_0" class=" custom-form-control-search-color form-control" placeholder="Search for proudct">
+											<div class="cus-form-control-feedback">
+												<button class="search-but">
+													<i class="icon-search4 opacity-50"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class=" heghit-dev col-xl-2">
+										<button class="but-height export">
+											<img height="16.5rem" src="assets/icons/add-filtter.svg" alt="">
+										</button>
+									</div>
+									<div class=" heghit-dev col-xl-1">
+										<button class="export creat">
+											<img height="16.5rem" src="assets/icons/export.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class=" ">
+							<div>
+								<div class="table-responsive">
+									<div  class="rounded-table">
+										<table class="rtl table " id="DataTables_Table_0" id="DataTables_Table_0" role="grid" aria-describedby="">
+											<thead class="head-table">
+												<tr>
+													<th  class="head">
+														<label class="custom-control custom-checkbox custom-control-right">
+															<input type="checkbox" class="custom-control-input">
+															<span class="custom-control-label">تحديد</span>
+														</label> </th>
+													<th class="head" >
+														المسوق												
+													</th>
+													<th class="head">
+														المحفظة											
+													</th>
+													<th class="head">
+														تاريخ التسجيل									
+													</th>
+													<th class="head">
+														تاريخ اخر دخول								
+													</th>
+													<th class="head">
+														الدعوات								
+													</th>
+													<th class="head">
+														اجمالي الاوردرات								
+													</th>
+													<th class="head">
+														تم التسليم						
+													</th>
+													<th class="head">
+														المرتجع						
+													</th>
+													<th class="head">
+														الرصيد         							
+													</th>
+													<th class="head">
+														تم التحويل							
+													</th>
+													<th class="head">
+														متبقي في الحساب						
+													</th>
+													<th class="head">
+														بواسطة 						
+													</th>
+													<th class="head">
+														الحالة						
+													</th>
+													<th class="head">
+													</th>
+												</tr>
+											</thead>
+												<tbody>
+													<tr>
+														<td>
+															<label class="dispaly-style custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input">
+																<span class="custom-control-label p-0"></span>
+															</label>
+														</td>
+														<td class="arabic">
+															<a href="#">
+																فاطمة محمد خالد
+															</a>										
+														</td>
+														<td class="num-table">
+															01117321541 
+														</td>
+														<td class="num-table">
+															17/12/2023
+														</td>
+														<td class="num-table">
+															17/12/2023
+														</td>
+														<td class="num-table">
+															17
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															Youstina 
+														</td>
+														<td class="arabic">
+															<span class="arabic dis">تم التنشيط</span>
+															بتاريخ <span class="num-table">17/12/2023</span>
+														</td>
+														<td>
+															<button class="deleted">
+																<img height="22px" src="assets/icons/deleted-icon.svg" alt="">
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<label class="dispaly-style custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input">
+																<span class="custom-control-label p-0"></span>
+															</label>
+														</td>
+														<td class="arabic">
+															<a href="#">
+																فاطمة محمد خالد
+															</a>										
+														</td>
+														<td class="num-table">
+															01117321541 
+														</td>
+														<td class="num-table">
+															17/12/2023
+														</td>
+														<td class="num-table">
+															17/12/2023
+														</td>
+														<td class="num-table">
+															17
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															18
+														</td>
+														<td class="num-table">
+															Youstina 
+														</td>
+														<td class="arabic">
+															<button class="butt-table-accept">تنشيط</button>
+														</td>
+														<td>
+															<button class="deleted">
+																<img height="22px" src="assets/icons/deleted-icon.svg" alt="">
+															</button>
+														</td>
+													</tr>
+												</tbody>
+									</table>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					<!-- /traffic sources -->
+				</div>
+				<!-- /content area -->
+			</div>
+			<!-- /inner content -->
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

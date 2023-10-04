@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Prof Store</title>
+	<link rel="icon" type="image/x-icon" href="assets/images/logo-head.png">
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="global_assets/js/main/jquery.min.js"></script>
+	<script src="global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="global_assets/js/demo_pages/dashboard.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/lines.js"></script>	
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/areas.js"></script>
+	<script src="lobal_assets/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/bars.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/progress.js"></script>
+	<script src="global_assets/js/demo_charts/pages/dashboard/light/pies.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/bars_basic.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/bars_stacked.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/bars_stacked_clustered.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/bars_floating.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/bars_line.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/tornado_negative_stack.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/bars/tornado_staggered.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_basic.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_stacked.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_inverted_axes.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_multiple.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_point_values.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/lines/lines_zoom.js"></script>
+	<script src="../../../../global_assets/js/plugins/visualization/echarts/echarts.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_basic.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_donut.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_nested.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_infographic.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_rose.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_rose_labels.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_levels.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_timeline.js"></script>
+	<script src="../../../../global_assets/js/demo_charts/echarts/light/pies/pie_multiple.js"></script>
+	<!-- /theme JS files -->
+    <link rel="stylesheet" href="assets/css/master.css">
+	<link rel="stylesheet" href="assets/css/employees-stat.css">
+
+</head>
+
+<body>
+
+<!-- Main navbar -->
+<div class="navbar navbar-expand-xl navbar-dark navbar-static">
+    <div class="d-flex flex-1 d-xl-none">
+        <button type="button" class="navbar-toggler sidebar-mobile-main-toggle">
+            <i class="icon-paragraph-justify3"></i>
+        </button>
+    </div>
+
+    <div class="navbar-brand text-center text-xl-left">
+        <a href="home_page.html" class="d-inline-block">
+            <img src="assets/images/logo-main.png" class="d-none d-sm-block" alt="">
+            <img src="assets/images/Logo-sgadow.png" class="d-sm-none" alt="">
+        </a>
+    </div>
+
+    <div class="collapse navbar-collapse order-2 order-xl-1 " id="navbar-mobile">
+    </div>
+
+    <ul class="navbar-nav flex-row order-1 order-xl-2 flex-1 flex-xl-0 justify-content-end align-items-center">
+		<!-- <li>            
+			<a href="add-order.html" class="navbar-nav-link">
+			<i><img height="20.5rem" src="assets/icons/cart.svg" alt=""></i>
+		</a>
+		</li> -->
+        <li class="nav-item nav-item-dropdown-xl dropdown">
+            <a href="#" class="navbar-nav-link navbar-nav-link-toggler" data-toggle="dropdown" aria-expanded="false">
+                <i><img height="20.5rem" src="assets/icons/noti.svg" alt=""></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-xl-350">
+                <div class="diriction dropdown-content-header">
+					<span class="font-weight-semibold">الإشعارات</span>
+                </div>
+
+				<div class="dropdown-content-body dropdown-scrollable">
+                    <ul class="media-list">
+						<li class="media">
+                            <div class="media-body">
+                                <span class="text-muted massege">الاوردر كود 1234568 لايرد على الهاتف لكي يتم تأكيد الاوردر و شحنه</span>
+                            </div>
+							<div class="mr-3 position-relative">
+                                <img src="assets/icons/call-center-massege.svg" width="36" height="36" alt="">
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-body">
+                                <span class="text-muted massege">تم تحويل مبلغ 2000ج على المحفظه رقم 01023654785</span>
+                            </div>
+							<div class="mr-3 position-relative">
+                                <img src="assets/icons/wallet-massege.svg" width="36" height="36" alt="">
+                            </div>
+                        </li>
+						<li class="media">
+                            <div class="media-body">
+                                <span class="text-muted massege">تم توفير قطع من المنتج في المخزن</span>
+                            </div>
+							<div class="mr-3 position-relative">
+                                <img src="assets/icons/shoe-massege.svg" width="36" height="36" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dropdown-content-footer justify-content-center p-0">
+                    <a href="notification-page.html" class="btn btn-light btn-block border-0 rounded-top-0" data-popup="tooltip" title="" data-original-title="Load more"><span class="more-noti">عرض المزيد</س></a>
+                </div>
+            </div>
+        </li>
+
+        <li class="nav-item nav-item-dropdown-xl dropdown dropdown-user show">
+                <img src="assets/images/avatar-svgrepo-com.svg" class="rounded-pill mr-xl-2" height="34" alt="">
+                <span class="user-name-head d-none d-xl-inline-block">Hi! User</span>
+        </li>
+    </ul>
+</div>
+<!-- /main navbar -->
+
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-xl">
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- User menu -->
+					<div class="sidebar-section-body">
+						<div class="media">
+							<img height="35.25rem" src="assets/images/logo-main.png" class=" btn-outline-lighsidebar-mobile-right-toggle d-xl-none" alt="">
+							<div class="media-body">
+							</div>
+							<div class="ml-3 align-self-center">
+								<button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-xl-inline-block">
+									<i class="icon-transmission"></i>
+								</button>
+
+								<button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-xl-none">
+									<i class="icon-cross2"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				<!-- /user menu -->
+
+
+				<!-- Main navigation -->
+				<div class="flex-space sidebar-section">
+					<div>
+						<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+							<!-- Main -->
+							<li class="nav-item">
+								<a href="home_page.html" class="nav-link">
+									<span class=" icontextspan">
+										الصفحة الرئيسية
+									</span>
+									<i><img class="label-active-side-bar" height="20.5rem" src="assets/icons/home.svg" alt=""></i>
+								</a>
+							</li>
+							<li class="nav-item nav-item-submenu">
+								<a href="#" class="nav-link">
+									<span class="icontextspan-2">الموظفين</span>
+									<i><img height="18.5rem" src="assets/icons/Employees.svg" alt=""></i> 
+								</a>
+								<ul class="nav nav-group-sub" data-submenu-title="Themes">
+										<li class="nav-item ordertext">
+											<a href="employees-stat.html" class="nav-link ">
+											<span class="add-or-check">
+												حالة الموظفين
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="tasks.html" class="nav-link ">
+											<span class="add-or-check">
+												تاسكات											
+											</span>
+											</a>
+										</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="topclient.html" class="nav-link">
+									<span class="icontextspan">
+										عملاء مميزين
+									</span>
+									<i><img height="25.5rem" src="assets/icons/star-emp.svg" alt=""></i>
+								</a>
+							</li>
+							<li class="nav-item nav-item-submenu"> 
+								<a href="#" class="nav-link">
+									<span class="icontextspan">الاوردرات</span>
+									<i><img height="20.5rem" src="assets/icons/order.svg" alt=""></i> 
+								</a>
+								<ul class="nav nav-group-sub" data-submenu-title="Themes">
+										<li class="nav-item ordertext">
+											<a  href="order-stat.html" class="nav-link active ">
+												<span  class="add-or-check">حالة الاوردرات</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="add-order.html" class="nav-link ">
+											<span class="add-or-check">
+												إضافة اوردر جديد
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="replacement-order.html" class="nav-link ">
+											<span class="add-or-check">
+												إضافة اوردر أستبدال
+											</span>
+											</a>
+										</li>
+								</ul>
+							</li>
+							<li class="nav-item nav-item-submenu">
+								<a href="#" class="nav-link">
+									<span class="icontextspan-2">شركات الشحن</span>
+									<i><img height="15.5rem" src="assets/icons/shipping.svg" alt=""></i> 
+								</a>
+								<ul class="nav nav-group-sub" data-submenu-title="Themes">
+									<li class="nav-item nav-item-submenu"> 
+										<a href="#" class="nav-link">
+											<span class="icontextspan-3">اشحنلي</span>
+											<i><img height="12.5rem" src="assets/icons/ecs-gray.svg" alt=""></i> 
+										</a>
+										<ul class="nav nav-group-sub" data-submenu-title="Themes">
+												<li class="nav-item ordertext">
+													<a  href="deliverables-ecs.html" class="nav-link active ">
+														<span  class="add-or-check">إرسال تقارير</span>
+													</a>
+												</li>
+												<li class="nav-item ordertext">
+													<a href="Accounts-ecs.html" class="nav-link ">
+													<span class="add-or-check">
+														حساب شركة شحن
+													</span>
+													</a>
+												</li>
+												<li class="nav-item ordertext">
+													<a href="create_a-settlement-ecs.html" class="nav-link ">
+													<span class="add-or-check">
+														إنشاء تسوية													
+													</span>
+													</a>
+												</li>
+												<li class="nav-item ordertext">
+													<a href="print-orders-ecs.html" class="nav-link ">
+													<span class="add-or-check">
+														طباعة اوردرات 													
+													</span>
+													</a>
+												</li>
+												<li class="nav-item ordertext">
+													<a href="reactionary-ecs.html" class="nav-link ">
+													<span class="add-or-check">
+														مرتجعات													
+													</span>
+													</a>
+												</li>
+										</ul>
+									</li>
+									<li class="nav-item nav-item-submenu"> 
+										<a href="#" class="nav-link">
+											<span class="icontextspan-3">كيو بي</span>
+											<i><img height="12.5rem" src="assets/icons/qp-gray.svg" alt=""></i> 
+										</a>
+										<ul class="nav nav-group-sub" data-submenu-title="Themes">
+											<li class="nav-item ordertext">
+												<a  href="deliverables-qp.html" class="nav-link active ">
+													<span  class="add-or-check">إرسال تقارير</span>
+												</a>
+											</li>
+											<li class="nav-item ordertext">
+												<a href="Accounts-qp.html" class="nav-link ">
+												<span class="add-or-check">
+													حساب شركة شحن
+												</span>
+												</a>
+											</li>
+											<li class="nav-item ordertext">
+												<a href="create_a-settlement-qp.html" class="nav-link ">
+												<span class="add-or-check">
+													إنشاء تسوية													
+												</span>
+												</a>
+											</li>
+											<li class="nav-item ordertext">
+												<a href="print-orders-qp.html" class="nav-link ">
+												<span class="add-or-check">
+													طباعة اوردرات 													
+												</span>
+												</a>
+											</li>
+											<li class="nav-item ordertext">
+												<a href="reactionary-qp.html" class="nav-link ">
+												<span class="add-or-check">
+													مرتجعات													
+												</span>
+												</a>
+											</li>
+									</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item nav-item-submenu"> 
+								<a href="#" class="nav-link">
+									<span class="icontextspan">المسوقين</span>
+									<i><img height="20.5rem" src="assets/icons/kk.svg" alt=""></i> 
+								</a>
+								<ul class="nav nav-group-sub" data-submenu-title="Themes">
+										<li class="nav-item ordertext">
+											<a  href="topmarkter.html" class="nav-link active ">
+												<span  class="add-or-check">المسوقين المتميزين</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="statusmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												حالة المسوقين											
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="accountsmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												حسابات المسوقين											
+											</span>
+											</a>
+										</li>
+								</ul>
+							</li>
+							<li class="nav-item nav-item-submenu"> 
+								<a href="#" class="nav-link">
+									<span class="icontextspan">تقارير </span>
+									<i><img height="20.5rem" src="assets/icons/report.svg" alt=""></i> 
+								</a>
+								<ul class="nav nav-group-sub" data-submenu-title="Themes">
+										<li class="nav-item ordertext">
+											<a href="statusmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												تقارير										
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="statusmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												تقارير قطع										
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="accountsmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												تقارير قطع بروف										
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="accountsmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												تقارير قطع مسوقين										
+											</span>
+											</a>
+										</li>
+										<li class="nav-item ordertext">
+											<a href="statusmarkter.html" class="nav-link ">
+											<span class="add-or-check">
+												تقارير اوردرات تسليم										
+											</span>
+											</a>
+										</li>
+								</ul>
+							</li>
+							
+							<!-- /main -->
+						</ul>
+					</div>
+					<div>
+						<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+							<!-- Main -->
+							<li class="nav-item">
+								<a href="profile.html" class="nav-link">
+								<span class="icontextspan">الاعدادات</span>
+								<i><img height="20.5rem" src="assets/icons/sett.svg" alt=""></i> 
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<span class="icontextspan">
+										تسجيل الخروج
+									</span>
+									<i><img height="20.5rem" src="assets/icons/out.svg" alt=""></i>
+								</a>
+							</li>
+							<!-- /main -->
+						</ul>
+					</div>
+					
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Inner content -->
+			<div class="content-inner">
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Traffic sources -->
+					<div class="card padding-card">
+						<div class="col-xl-12">
+							<div class="row">
+									<div class=" col-xl-2">
+										<div class="padding-card card color-card">
+											<img height="30.125rem" src="assets/icons/Admin & Assistants.svg" alt="">
+											<span class="tiitle">Admin & Assistants</span>
+											<div class="btn-group position-static">
+												<button type="button" class="btn-style dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="op-text">Employees</span></button>
+												<div class="dropdown-menu">
+													<a href="Accounts-qp.html" class="dropdown-item">mmm</a>
+													<div class="dropdown-content-footer justify-content-center p-0">
+														<a href="notification-page.html" class="btn btn-light btn-block border-0 rounded-top-0" data-toggle="modal" data-target="#add-emp" > <span class="more-noti">Add Employe</span></a>
+													</div>
+												</div>
+											</div>
+											</div>
+									</div> 
+									<div class=" col-xl-2">
+										<div class="padding-card card color-card">
+											<img height="30.125rem" src="assets/icons/Accountant.svg" alt="">
+											<span class="tiitle">Accountant</span>
+											<div class="btn-group position-static">
+												<button type="button" class="btn-style dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="op-text">Employees</span></button>
+												<div class="dropdown-menu">
+													<a href="Accounts-qp.html" class="dropdown-item">mmm</a>
+													<div class="dropdown-content-footer justify-content-center p-0">
+														<a href="notification-page.html" class="btn btn-light btn-block border-0 rounded-top-0" data-toggle="modal" data-target="#add-emp" ><span class="more-noti">Add Employe</span></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class=" col-xl-2">
+										<div class="padding-card card color-card">
+											<img height="30.125rem" src="assets/icons/Moderator.svg" alt="">
+											<span class="tiitle">Moderator</span>
+											<div class="btn-group position-static">
+												<button type="button" class="btn-style dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="op-text">Employees</span></button>
+												<div class="dropdown-menu">
+													<a href="Accounts-qp.html" class="dropdown-item">mmm</a>
+													<div class="dropdown-content-footer justify-content-center p-0">
+														<a href="notification-page.html" class="btn btn-light btn-block border-0 rounded-top-0" data-toggle="modal" data-target="#add-emp" ><span class="more-noti">Add Employe</span></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-2">
+										<div class="padding-card card color-card">
+											<img height="30.125rem" src="assets/icons/Call Center rep..svg" alt="">
+											<span class="tiitle">Call Center rep.</span>
+											<div class="btn-group position-static">
+												<button type="button" class="btn-style dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="op-text">Employees</span></button>
+												<div class="dropdown-menu">
+													<a href="Accounts-qp.html" class="dropdown-item">mmm</a>
+													<div class="dropdown-content-footer justify-content-center p-0">
+														<a href="notification-page.html" class="btn btn-light btn-block border-0 rounded-top-0" data-toggle="modal" data-target="#add-emp" ><span class="more-noti">Add Employe</span></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class=" col-xl-2">
+										<div class="padding-card card color-card">
+											<img height="30.125rem" src="assets/icons/Shipping rep..svg" alt="">
+											<span class="tiitle">Shipping rep.</span>
+											<div class="btn-group position-static">
+												<button type="button" class="btn-style dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="op-text">Employees</span></button>
+												<div class="dropdown-menu">
+													<a href="Accounts-qp.html" class="dropdown-item">mmm</a>
+													<div class="dropdown-content-footer justify-content-center p-0">
+														<a href="notification-page.html" class="btn btn-light btn-block border-0 rounded-top-0" data-toggle="modal" data-target="#add-emp" ><span class="more-noti">Add Employe</span></a>
+													</div>
+												</div>
+											</div>									
+										</div>
+									</div>
+									<div class=" col-xl-2">
+										<div class="padding-card card color-card">
+											<img height="30.125rem" src="assets/icons/Store rep..svg" alt="">
+											<span class="tiitle"> Store rep.</span>
+											<div class="btn-group position-static">
+												<button type="button" class="btn-style dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="op-text">Employees</span></button>
+												<div class="dropdown-menu">
+													<a href="Accounts-qp.html" class="dropdown-item">mmm</a>
+													<div class="dropdown-content-footer justify-content-center p-0">
+														<a href="notification-page.html" class="btn btn-light btn-block border-0 rounded-top-0" data-toggle="modal" data-target="#add-emp" ><span class="more-noti">Add Employe</span></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+							</div>
+						</div>
+						<h5 class="card-title">الأجازات</h5>
+						<div class="card card-filter  color-card cust-padding-card">
+							<div class="flex-cus col-xl-12">
+								<div class="row">
+									<div class=" col-xl-2">
+										<select type="text" class="rtl-text form-control form-control-lg" placeholder="المحافظة">
+											<option value="">Employee</option>
+											<option value="">All</option>
+										</select>
+									</div>
+									<div class=" col-xl-2">
+										<select  type="text" class="rtl-text form-control form-control-lg" placeholder="المحافظة">
+											<option value="">Month</option>
+											<option value="01">January</option>
+											<option value="02">February</option>
+											<option value="03">March</option>
+											<option value="04">April</option>
+											<option value="05">May</option>
+											<option value="06">June</option>
+											<option value="07">July</option>
+											<option value="08">August</option>
+											<option value="09">September</option>
+											<option value="10">October</option>
+											<option value="11">November</option>
+											<option value="12">December</option>
+										</select>
+									</div>
+									<div class=" col-xl-1">
+										<button class="search-button">
+											<span>
+												Search
+											</span>
+										</button>
+									</div>
+									<div class=" col-xl-3">
+
+									</div>
+									<div class=" col-xl-2">
+
+									</div>
+									<div class=" col-xl-2">
+										<div class="row">
+											<div class=" col-xl-6">
+												<button class="export">
+													<img height="16.5rem" src="assets/icons/export.svg" alt="">
+												</button>
+											</div>
+											<div class=" col-xl-2">
+												<button class="export">
+													<img height="16.5rem" src="assets/icons/refresh.svg" alt="">
+												</button>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="card card-table color-card padding-card">
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th class="name-emp">الموظف</th>
+											<th>
+												<img src="assets/icons/green-check.svg" alt="">
+											</th>
+											<th>
+												<img src="assets/icons/red-ex.svg" alt="">
+											</th>
+											<th>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</th >
+											<th class="line-table">
+												<img src="assets/icons/cyan-hand.svg" alt="">
+											</th>
+											<th>
+												1
+											</th>
+											<th>
+												2
+											</th>
+											<th>
+												3
+											</th>
+											<th>
+												4
+											</th>
+											<th>
+												5
+											</th>
+											<th>
+												6
+											</th>
+											<th>
+												7
+											</th>
+											<th>
+												8
+											</th>
+											<th>
+												9
+											</th>
+											<th>
+												10
+											</th>
+											<th>
+												11
+											</th>
+											<th>
+												12
+											</th>
+											<th>
+												13
+											</th>
+											<th>
+												14
+											</th>
+											<th>
+												15
+											</th>
+											<th>
+												16
+											</th>
+											<th>
+												17
+											</th>
+											<th>
+												18
+											</th>
+											<th>
+												19
+											</th>
+											<th>
+												20
+											</th>
+											<th>
+												21
+											</th>
+											<th>
+												22
+											</th>
+											<th>
+												23
+											</th>
+											<th>
+												24
+											</th>
+											<th>
+												25
+											</th>
+											<th>
+												26
+											</th>
+											<th>
+												27
+											</th>
+											<th>
+												28
+											</th>
+											<th>
+												29
+											</th>
+											<th>
+												30
+											</th>
+											<th>
+												31
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td >Adel Agaybie</td>
+											<td>
+												20
+											</td>
+											<td>
+												15
+											</td>
+											<td>
+												20
+											</td>
+											<td class="line-table">
+												10
+											</td>
+											<td>
+												<img src="assets/icons/green-check.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/red-ex.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/cyan-hand.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/green-check.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/red-ex.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/cyan-hand.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/green-check.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/red-ex.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/cyan-hand.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/green-check.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/red-ex.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/cyan-hand.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/green-check.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/red-ex.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/cyan-hand.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/green-check.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/red-ex.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/cyan-hand.svg" alt="">
+											</td>
+											<td>
+												<img src="assets/icons/Group 2731.svg" alt="">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+					<div class="card card-filter margin-card-cus  color-card cust-padding-card">
+						<h5>طلبات السلف</h5>
+					</div>
+							<div class="table-responsive cus-marg">
+								<div  class="rounded-table">
+									<table class="table">
+										<thead>
+											<tr>
+												<th class="head">الموظف</th>
+												<th class="head">
+													المبلغ											
+												</th>
+												<th class="head">
+													ملاحظات											
+												</th>
+												<th class="head">
+													تاريخ الطلب 											
+												</th>
+												<th class="head">
+													القرار											
+												</th>
+												
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="num-table">Adel Agaybie</td>
+												<td class="arabic">
+													<span class="num-table">250</span> ج.م
+												</td>
+												<td class="arabic">
+													ارجو السماح لي بسلفة  بمبلغ  <span class="num-table">250</span> ج.م
+												</td>
+												<td class="num-table">
+													25/11/2023
+												</td>
+												<td>
+													<button class="butt-table-accept">موافقة</button>
+													<button class="butt-table-reject">رفض</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								
+							</div>
+				<div class="card card-filter margin-card-cus  color-card cust-padding-card">
+					<h5>طلبات الاجازات</h5>
+				</div>
+						<div class="table-responsive cus-marg">
+							<div  class="rounded-table">
+									<table class="table">
+								<thead>
+									<tr>
+										<th class="head">الموظف</th>
+										<th class="head">
+											عدد الايام											
+										</th>
+										<th class="head">
+											ملاحظات											
+										</th>
+										<th class="head">
+											تاريخ الطلب 											
+										</th>
+										<th class="head">
+											القرار											
+										</th>
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="num-table">Adel Agaybie</td>
+										<td class="num-table">
+											1
+										</td>
+										<td class="arabic">
+											ارجو السماح لي بأجازة تبدأ من يوم 										
+										</td>
+										<td class="num-table">
+											25/11/2023
+										</td>
+										<td>
+											<button class="butt-table-accept">موافقة</button>
+											<button class="butt-table-reject">رفض</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+						
+						</div>
+				<h5 class="card-title">طلبات شراء المنتجات</h5>
+				<div class="card card-filter margin-card-cus  color-card cust-padding-card">
+					<div class="flex-cus col-xl-12">
+						<div class="row">
+							<div class=" col-xl-2">
+								<select type="text" class="rtl-text form-control form-control-lg" placeholder="المحافظة">
+									<option value="">Employee</option>
+									<option value="">All</option>
+								</select>
+							</div>
+							<div class=" col-xl-2">
+								<select  type="text" class="rtl-text form-control form-control-lg" placeholder="المحافظة">
+									<option value="">Month</option>
+									<option value="01">January</option>
+									<option value="02">February</option>
+									<option value="03">March</option>
+									<option value="04">April</option>
+									<option value="05">May</option>
+									<option value="06">June</option>
+									<option value="07">July</option>
+									<option value="08">August</option>
+									<option value="09">September</option>
+									<option value="10">October</option>
+									<option value="11">November</option>
+									<option value="12">December</option>
+								</select>
+							</div>
+							<div class=" col-xl-1">
+								<button class="search-button">
+									<span>
+										Search
+									</span>
+								</button>
+							</div>
+							<div class=" col-xl-3">
+
+							</div>
+							<div class=" col-xl-1">
+
+							</div>
+							<div class=" col-xl-3">
+								<div class="row">
+									<div class=" col-xl-2">
+									</div>
+									<div class=" col-xl-6">
+										<button class="export" data-toggle="modal" data-target="#add-order">
+											<img height="16.5rem" src="assets/icons/Group 2545.svg" alt="">
+										</button>
+									</div>
+									<div class=" col-xl-4">
+										<button class="export" >
+											<img height="16.5rem" src="assets/icons/export.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="table-responsive cus-marg">
+					<div  class="rounded-table">
+						<table class="rtl table">
+							<thead class="head-table">
+								<tr>
+									<th class="head">
+										الموظف												
+									</th>
+									<th class="head">
+										عدد القطع											
+									</th>
+									<th class="head">
+										كود القطعة										
+									</th>
+									<th class="head">
+										المقاس										
+									</th>
+									<th class="head">
+										السعر											
+									</th>
+									<th class="head">
+										الاجمالي										
+									</th>
+									<th class="head">
+										تاريخ الطلب									
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="num-table">
+										Adel Agaybie	
+									</td>
+									<td class="num-table">
+										1
+									</td>
+									<td class="num-table">
+										Star4									
+									</td>
+									<td class="num-table">
+										45									
+									</td>
+									<td class="num-table">
+										300 
+									</td>
+									<td class="num-table">
+										215
+									</td>
+									<td class="num-table">
+										17/12/2023
+									</td>
+								</tr>
+							</tbody>
+					</table>
+					</div>
+					
+				</div>
+					</div>
+					<!-- /traffic sources -->
+				</div>
+				<!-- /content area -->
+			</div>
+			<!-- /inner content -->
+		</div>
+		<!-- /main content -->
+		<div id="add-emp" class="modal fade" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2>Welcome to our store team</h2>
+						<hr class="line-model">
+					</div>
+					<div class="modal-body">
+						<img width="500.625rem" class="empl-img" src="assets/images/SharedScreenshot-transformed.svg" alt="">
+						<div class="col-xl-12">
+							<div class="rtl row">
+								<div class="col-sm-6 col-xl-6">
+									<div class="form-group form-group-feedback form-group-feedback-right">
+										<input type="text" class="custom-form-model rtl-text form-control form-control-lg" placeholder="اسم العميل">
+										<div class="form-control-feedback form-control-feedback-lg">
+											<img src="assets/icons/user.svg" alt="">
+										</div>
+									</div>
+								</div>
+									<div class="col-sm-6 col-xl-6">
+										<div class="form-group form-group-feedback form-group-feedback-right">
+											<input type="text" required class="custom-form-model rtl-text num-input form-control form-control-lg" placeholder="البريد الالكتروني">
+											<div class="form-control-feedback form-control-feedback-lg">
+												<img src="assets/icons/email.svg" alt="">
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+						<div class="col-xl-12">
+							<div class="rtl row" >
+								<div class="col-sm-6 col-xl-6">
+									<div class="form-group form-group-feedback form-group-feedback-right">
+										<input type="text" class="custom-form-model rtl-text form-control form-control-lg" placeholder="كلمة المرور">
+										<div class="form-control-feedback form-control-feedback-lg">
+											<img src="assets/icons/lock.svg" alt="">
+										</div>
+									</div>
+								</div>
+									<div class="col-sm-6 col-xl-6">
+										<div class="form-group form-group-feedback form-group-feedback-right">
+											<input type="text" class="custom-form-model rtl-text form-control form-control-lg" placeholder="إعادة كلمة المرور">
+											<div class="form-control-feedback form-control-feedback-lg">
+												<img src="assets/icons/lock.svg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="close-btn" data-dismiss="modal">إلغاء</button>
+						<button type="button" class="delev-btn">إضافة</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="add-order" class="modal fade" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<img width="500.625rem" class="order-img" src="assets/images/Group 2604.svg" alt="">
+						<div class="col-xl-12">
+							<div class="rtl row">
+								<div class="col-sm-6 col-xl-6">
+									<div class="form-group form-group-feedback ">
+										<select type="text" class="custom-form-model rtl-text form-control form-control-lg">
+											<option class="title-select">القسم</option>
+										</select>
+									</div>
+								</div>
+									<div class="col-sm-6 col-xl-6">
+										<div class="form-group form-group-feedback">
+											<select type="text" required class="custom-form-model rtl-text num-input form-control">
+												<option class="title-select">الموظف</option>
+											</select>
+										</div>
+									</div>
+							</div>
+						</div>
+						<div class="table-responsive">
+							<table class="table add-order-table">
+								<tbody>
+									<tr>
+										<td >
+											<div class="col-xl-12">
+												<div class="rtl row" >
+													<div class="col-sm-6 col-xl-6">
+														<div class="form-group form-group-feedback ">
+															<select type="text" class="custom-form-model rtl-text form-control form-control-lg">
+																<option class="title-select">
+																	كود القطعة
+																</option>
+															</select>
+														</div>
+													</div>
+														<div class="col-sm-6 col-xl-6">
+															<div class="form-group form-group-feedback ">
+																<select type="text" class="custom-form-model rtl-text form-control form-control-lg">
+																	<option class="title-select">
+																		المقاس
+																	</option>
+																	<option>41</option>
+																	<option>42</option>
+																	<option>43</option>
+																	<option>44</option>
+																	<option>45</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class=" margin-cus form-group form-group-feedback ">
+							<input type="text" class="custom-form-model rtl rtl-text form-control form-control-lg" placeholder="السعر الاجمالي">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="close-btn" data-dismiss="modal">إلغاء</button>
+						<button type="button" class="delev-btn">إضافة</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

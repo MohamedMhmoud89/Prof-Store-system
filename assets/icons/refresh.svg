@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98.003" height="20" viewBox="0 0 98.003 20">
+  <g id="Group_2533" data-name="Group 2533" transform="translate(-1632.997 -706)">
+    <text id="Refresh" transform="translate(1660 722)" fill="#707070" font-size="20" font-family="Bahnschrift"><tspan x="0" y="0">Refresh</tspan></text>
+    <g id="Group_1361" data-name="Group 1361" transform="translate(1632.997 707.895)">
+      <g id="Group_1360" data-name="Group 1360" transform="translate(0 0)">
+        <path id="Path_1653" data-name="Path 1653" d="M2419.694,9677.321a5.336,5.336,0,0,1,8.745-3.277l-.688.688a.59.59,0,0,0,.417,1.008h2.707a.59.59,0,0,0,.59-.59v-2.707a.59.59,0,0,0-1.007-.417l-.768.768a7.1,7.1,0,0,0-11.745,4.27.894.894,0,0,0,.739,1.025,1.009,1.009,0,0,0,.133.012A.9.9,0,0,0,2419.694,9677.321Z" transform="translate(-2417.934 -9670.994)" fill="#707070"/>
+        <path id="Path_1654" data-name="Path 1654" d="M2450.288,9926.98a.9.9,0,0,0-.877.779,5.335,5.335,0,0,1-8.746,3.277l.688-.687a.59.59,0,0,0-.417-1.008h-2.707a.59.59,0,0,0-.59.59v2.707a.591.591,0,0,0,1.007.417l.767-.768a7.1,7.1,0,0,0,11.746-4.27.894.894,0,0,0-.738-1.025A1.23,1.23,0,0,0,2450.288,9926.98Z" transform="translate(-2437.092 -9919.873)" fill="#707070"/>
+      </g>
+    </g>
+  </g>
+</svg>
